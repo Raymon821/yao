@@ -7,7 +7,6 @@
  */
 try {
     file_put_contents('log.txt', json_encode($_POST['payload']), PHP_EOL, FILE_APPEND);
-//    print_r($_REQUEST);die;
 //    $payload = $this->getParams('payload');
 //    $requestParams = json_decode($payload, true);
 //    if ($requestParams['ref'] == 'refs/heads/develop') { //develop 分支自动发布到beta
