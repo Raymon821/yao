@@ -6,7 +6,8 @@
  * Time: 上午10:41
  */
 try {
-    print_r($_REQUEST);die;
+    file_put_contents('log.txt', json_encode($_REQUEST), FILE_APPEND);
+//    print_r($_REQUEST);die;
 //    $payload = $this->getParams('payload');
 //    $requestParams = json_decode($payload, true);
 //    if ($requestParams['ref'] == 'refs/heads/develop') { //develop 分支自动发布到beta
