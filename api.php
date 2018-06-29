@@ -6,7 +6,7 @@
  * Time: 上午10:41
  */
 try {
-    file_put_contents('log.txt', json_encode($_POST), PHP_EOL, FILE_APPEND);
+    file_put_contents('log.txt', json_encode($_GET), PHP_EOL, FILE_APPEND);
 //    print_r($_REQUEST);die;
 //    $payload = $this->getParams('payload');
 //    $requestParams = json_decode($payload, true);
